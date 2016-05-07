@@ -1,5 +1,5 @@
 
-FROM datamgt/baseconsul
+FROM datamgtcloud/baseconsul
 
 MAINTAINER Changbing JI version: openjdk-8-jre=8u72-b15-1~bpo8+1
 
