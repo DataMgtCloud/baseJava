@@ -14,9 +14,11 @@ RUN \
 
 RUN \
   apt-get update && \
-  apt-get install -y aptitude openjdk-8-jre gradle&& \
+  apt-get install -y aptitude openjdk-8-jdk gradle && \
   apt-get clean
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/jre
 
 RUN ln -s $JAVA_HOME /opt/java
+
+COPY dockerBuild /app/
