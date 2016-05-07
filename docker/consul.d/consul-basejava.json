@@ -28,10 +28,10 @@
                   "isprompt":"false"
                },
                {
-	          "name":"java_option_security_egd",
-	          "type":"string",
-	          "value":"-Djava.security.egd=file:/dev/urandom",
-	          "isprompt":"false"
+      	          "name":"java_option_security_egd",
+      	          "type":"string",
+      	          "value":"-Djava.security.egd=file:/dev/urandom",
+      	          "isprompt":"false"
                },
                {
                   "name":"java_options",

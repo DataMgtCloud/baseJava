@@ -1,2 +1,2 @@
-echo "start service manager";
+echo "Start service manager";
 exec "/sbin/boot";

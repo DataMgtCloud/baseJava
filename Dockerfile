@@ -1,7 +1,7 @@
 
 FROM datamgtcloud/baseconsul
 
-MAINTAINER Changbing JI version: openjdk-8-jre
+MAINTAINER Changbing JI version: openjdk-8-jdk
 
 COPY startContainer.sh /usr/bin/
 
@@ -12,13 +12,6 @@ RUN \
   mkdir /opt/jars/ && \
   mv aspectjweaver-1.8.6.jar /opt/jars/
 
-RUN \
-  apt-get update && \
-  apt-get install -y aptitude openjdk-8-jdk gradle && \
-  apt-get clean
-
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/jre
 
 RUN ln -s $JAVA_HOME /opt/java
-
-COPY dockerBuild /app/
