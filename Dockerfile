@@ -1,7 +1,7 @@
 
 FROM datamgtcloud/baseconsul
 
-MAINTAINER Changbing JI version: openjdk-8-jre=8u72-b15-1~bpo8+1
+MAINTAINER Changbing JI version: openjdk-8-jre
 
 COPY startContainer.sh /usr/bin/
 
@@ -15,7 +15,7 @@ RUN \
 RUN \
   apt-get update && \
   apt-get install -y aptitude && \
-  apt-get install -y openjdk-8-jre=8u72-b15-1~bpo8+1
+  apt-get install -y openjdk-8-jre
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/jre
 
