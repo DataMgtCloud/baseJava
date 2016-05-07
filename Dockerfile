@@ -14,8 +14,8 @@ RUN \
 
 RUN \
   apt-get update && \
-  apt-get install -y aptitude && \
-  apt-get install -y openjdk-8-jre
+  apt-get install -y aptitude openjdk-8-jre gradle&& \
+  apt-get clean
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/jre
 
