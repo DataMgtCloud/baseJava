@@ -9,6 +9,7 @@ COPY docker/consul.d/ /etc/consul.d/
 
 RUN \
   curl -s http://120.52.73.80/central.maven.org/maven2/org/aspectj/aspectjweaver/1.8.6/aspectjweaver-1.8.6.jar -o aspectjweaver-1.8.6.jar && \
+  mkdir /opt/jars/ && \
   mv aspectjweaver-1.8.6.jar /opt/jars/
 
 RUN \
