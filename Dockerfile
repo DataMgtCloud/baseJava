@@ -15,3 +15,13 @@ RUN \
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/jre
 
 RUN ln -s $JAVA_HOME /opt/java
+
+# java scripts
+COPY startContainer.sh /usr/bin/.
+COPY docker/consul.d/ /etc/consul.d/
+COPY assembleService.sh /app/.
+
+# Copy application code.
+WORKDIR /app
+
+CMD ["/sbin/boot"]
