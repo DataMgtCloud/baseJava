@@ -3,6 +3,11 @@ FROM datamgtcloud/baseconsul
 
 MAINTAINER Changbing JI version: openjdk-8-jdk
 
+RUN \
+  apt-get update && \
+  apt-get -y install aptitude openjdk-8-jdk gradle && \
+  apt-get clean
+
 COPY startContainer.sh /usr/bin/
 
 COPY docker/consul.d/ /etc/consul.d/
