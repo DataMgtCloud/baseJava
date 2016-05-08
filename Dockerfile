@@ -19,7 +19,7 @@ RUN ln -s $JAVA_HOME /opt/java
 # java scripts
 COPY startContainer.sh /usr/bin/.
 COPY docker/consul.d/ /etc/consul.d/
-COPY assembleService.sh /app/.
+COPY . /app
 
 # Copy application code.
 WORKDIR /app
