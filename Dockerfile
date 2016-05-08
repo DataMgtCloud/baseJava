@@ -24,4 +24,7 @@ COPY . /app
 # Copy application code.
 WORKDIR /app
 
+# expose Consul client agent ports
+EXPOSE 8080
+
 CMD ["/sbin/boot"]
