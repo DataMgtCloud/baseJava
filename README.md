@@ -1,3 +1,3 @@
 # Data Management Cloud Java Image
 
-JDK8
+JDK8 with Gradle
